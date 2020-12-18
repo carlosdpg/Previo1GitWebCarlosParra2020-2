@@ -16,11 +16,13 @@ var nodoContenedorForm = document.getElementById('contenedorForm'); //Nodo DIV
 
 var nodosEnTr = nodoTr.getElementsByTagName('td');
 
-var alimento = nodosEnTr[0].textContent; var calorias = nodosEnTr[1].textContent;
-
-var grasas = nodosEnTr[2].textContent; var proteina = nodosEnTr[3].textContent;
-
-var carbohidratos = nodosEnTr[4].textContent; var opciones = nodosEnTr[5].textContent;
+var alimento = nodosEnTr[0].textContent;
+var calorias = nodosEnTr[1].textContent;
+var grasas = nodosEnTr[2].textContent;
+var proteina = nodosEnTr[3].textContent;
+var carbohidratos = nodosEnTr[4].textContent;
+var ok = nodosEnTr[5].textContent;
+var opciones = nodosEnTr[6].textContent;
 
 var nuevoCodigoHtml = '<td><input type="text" name="alimento" id="alimento" value="'+alimento+'" size="10"></td>'+
 
@@ -30,7 +32,9 @@ var nuevoCodigoHtml = '<td><input type="text" name="alimento" id="alimento" valu
 
 '<td><input type="text" name="proteina" id="proteina" value="'+proteina+'" size="5"</td>'+
 
-'<td><input type="text" name="carbohidratos" id="carbohidratos" value="'+carbohidratos+'" size="5"</td> <td>En edición</td>';
+'<td><input type="text" name="carbohidratos" id="carbohidratos" value="'+carbohidratos+'" size="5"</td> <td>En edición</td>'+
+
+'<td><select name="ok"><option>Bien</option><option>Mal</option></select></td>';
 
  
 
@@ -40,7 +44,7 @@ nodoTr.innerHTML = nuevoCodigoHtml;
 
 nodoContenedorForm.innerHTML = 'Pulse Aceptar para guardar los cambios o cancelar para anularlos'+
 
-'<form name = "formulario" action="resultado.html" method="get" onsubmit="capturarEnvio()" onreset="anular()">'+
+'<form name = "formulario" action="resultados.html" method="get" onsubmit="capturarEnvio()" onreset="anular()">'+
 
 '<input class="boton" type = "submit" value="Aceptar"> <input class="boton" type="reset" value="Cancelar">';
 
@@ -60,7 +64,7 @@ var nodoContenedorForm = document.getElementById('contenedorForm'); //Nodo DIV
 
 nodoContenedorForm.innerHTML = 'Pulse Aceptar para guardar los cambios o cancelar para anularlos'+
 
-'<form name = "formulario" action="http://aprenderaprogramar.com" method="get" onsubmit="capturarEnvio()" onreset="anular()">'+
+'<form name = "formulario" action="resultados.html" method="get" onsubmit="capturarEnvio()" onreset="anular()">'+
 
 '<input type="hidden" name="alimento" value="'+document.querySelector('#alimento').value+'">'+
 
