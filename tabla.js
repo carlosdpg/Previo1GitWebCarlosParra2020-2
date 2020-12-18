@@ -40,7 +40,7 @@ nodoTr.innerHTML = nuevoCodigoHtml;
 
 nodoContenedorForm.innerHTML = 'Pulse Aceptar para guardar los cambios o cancelar para anularlos'+
 
-'<form name = "formulario" action="http://aprenderaprogramar.com" method="get" onsubmit="capturarEnvio()" onreset="anular()">'+
+'<form name = "formulario" action="resultado.html" method="get" onsubmit="capturarEnvio()" onreset="anular()">'+
 
 '<input class="boton" type = "submit" value="Aceptar"> <input class="boton" type="reset" value="Cancelar">';
 
@@ -71,6 +71,8 @@ nodoContenedorForm.innerHTML = 'Pulse Aceptar para guardar los cambios o cancela
 '<input type="hidden" name="proteina" value="'+document.querySelector('#proteina').value+'">'+
 
 '<input type="hidden" name="carbohidratos" value="'+document.querySelector('#carbohidratos').value+'">'+
+
+'<input type="hidden" name="ok" value="'+document.querySelector('#ok').value+'">'+
 
 '<input class="boton" type = "submit" value="Aceptar"> <input class="boton" type="reset" value="Cancelar">';
 
