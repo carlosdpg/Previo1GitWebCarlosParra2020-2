@@ -36,6 +36,10 @@ tr:hover td { background: #d0dafd; color: #339; }
 
   font-weight: bold; }
 
-  caption {
+caption {
     caption-side: bottom;
+}
+
+.titulo {
+    align-content: center;
 }
