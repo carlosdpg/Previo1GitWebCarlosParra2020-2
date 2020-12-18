@@ -32,9 +32,9 @@ var nuevoCodigoHtml = '<td><input type="text" name="alimento" id="alimento" valu
 
 '<td><input type="text" name="proteina" id="proteina" value="'+proteina+'" size="5"</td>'+
 
-'<td><input type="text" name="carbohidratos" id="carbohidratos" value="'+carbohidratos+'" size="5"</td> <td>En edición</td>'+
+'<td><input type="text" name="carbohidratos" id="carbohidratos" value="'+carbohidratos+'" size="5"</td>'+
 
-'<td><select name="ok"><option>Bien</option><option>Mal</option></select></td>';
+'<td><select name="ok"><option>Bien</option><option>Mal</option></select></td> <td>En edición</td>';
 
  
 
