@@ -37,5 +37,5 @@ tr:hover td { background: #d0dafd; color: #339; }
   font-weight: bold; }
 
   caption{
-      size: 14;
+      font-size-adjust: 14;
   }
